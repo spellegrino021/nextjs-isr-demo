@@ -2,8 +2,10 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
 export async function getStaticProps(context) {
-  const res = await fetch("https://www.randomnumberapi.com/api/v1.0/random");
-  const randomnum = await res.json();
+  // get random number between 1 and 100
+  const randomnum = Array.from({ length: 1 }, () =>
+    Math.floor(Math.random() * 100)
+  );
   return {
     props: {
       randomnum,
