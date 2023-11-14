@@ -26,7 +26,7 @@ export default function Home({ randomnum }) {
       <main>
         {randomnum.map((item) => (
           <div key={item}>
-            <h1>Random number annina: {item}</h1>
+            <h1>Random number annina 2: {item}</h1>
             </div>
         ))}
       </main>
