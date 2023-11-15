@@ -26,7 +26,7 @@ export default function Home({ randomnum }) {
       <main>
         {randomnum.map((item) => (
           <div key={item}>
-            <h1>Deployed an update: {item}</h1>
+            <h1>UPDATE IS WORKING: {item}</h1>
             </div>
         ))}
       </main>
